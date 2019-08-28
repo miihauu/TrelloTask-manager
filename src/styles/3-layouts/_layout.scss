@@ -1,0 +1,12 @@
+.app {
+  background: #fafafa;
+  height: 100vh;
+  font-family: $secondary-font;
+}
+
+
+.content {
+  display: flex;
+  overflow-y: auto;
+  height: calc(100% - 45px);
+}

@@ -1,0 +1,147 @@
+.board {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    background: $secondary-color;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      background: rgb(245, 245, 245);
+      border-radius: 5px;
+      border-top: 2px solid $med-priority;
+      margin: 4px 0;
+      cursor: pointer;
+      position: relative;
+
+      &__priority-low {
+        border-top: 2px solid $low-priority;
+      }
+      &__priority-med {
+        border-top: 2px solid $med-priority;
+      }
+      &__priority-high {
+        border-top: 2px solid $high-priority;
+      }
+
+      &__date {
+        display: flex;
+        justify-content: center;
+        width: 5rem;
+        height: auto;
+
+        background-color: $med-priority;
+        margin: .5rem;
+        padding: .15rem;
+        color: white;
+        font-size: .75rem;
+        border-radius: 5px;
+        
+      }
+
+      &__date-low {
+        background-color: $low-priority;
+      }
+
+      &__date-med {
+        background-color: $med-priority;
+      }
+
+      &__date-high {
+        background-color: $high-priority;
+      }
+
+      &__content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .text {
+        font-size: 0.9rem;
+        padding: 0.9rem 0.7rem;
+        width: 250px;
+        p {
+          margin: 0;
+          overflow-wrap: break-word;
+          text-overflow: ellipsis;
+          line-height: 1.5;
+        }
+
+        p:hover {
+          background: rgb(212, 212, 212);
+          padding: 0;
+          border-radius: 5px;
+        }
+
+        textarea {
+          width: 16rem;
+          height: 5rem;
+          outline: none;
+          resize: none;
+          overflow: auto;
+
+        }
+      }
+
+      
+
+/*       .card-attachments {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        .card-attachment {
+          margin: 0 5px;
+        }
+        span {
+          margin: 0 5px;
+        }
+        img {
+          width: 15px;
+          height: auto;
+        } 
+      } */
+      .card-priority {
+        display: flex;
+        justify-content: center;
+        background: $med-priority;
+        color: white;
+        width: 40%;
+        font-weight: 500;
+        padding: 3px;
+        font-size: 12px;
+        border-radius: 3px;
+        margin-left: 0.5rem;
+
+        &__low {
+          background: $low-priority;
+        }
+
+        &__medium {
+          background: $med-priority;
+        }
+
+        &__high {
+          background: $high-priority;
+        }
+      }
+      .card-actionBtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        z-index: 350;
+      }
+    }
+  }
+}
+
+
+

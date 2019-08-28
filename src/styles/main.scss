@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//Base folder
+
+@import '0-base/normalize';
+
+//Config folder
+
+@import '1-config/variables';
+
+//Components
+
+@import '2-components/board';
+@import '2-components/boardHeader';
+@import '2-components/boardContent';
+@import '2-components/boardnewCard';
+
+@import '2-components/button';
+@import '2-components/cardDropdownMenu';
+@import '2-components/boardDropdownMenu';
+
+@import '2-components/modals';
+
+//Layouts
+
+@import '3-layouts/layout';
+@import '3-layouts/header';
+

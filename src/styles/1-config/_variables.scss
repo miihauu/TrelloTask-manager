@@ -1,0 +1,19 @@
+/// Primary color of text
+$text-color-p: rgb(0, 0, 0);
+
+/// Secondary color of text;
+$text-color-s: rgb(255, 255, 255);
+
+/// Colors
+$primary-color: #1976d2;
+$secondary-color: #eeeeee;
+
+$high-priority: rgb(214, 88, 88);
+$med-priority: rgb(249, 168, 37);
+$low-priority: #7CB342;
+
+/// Primary font
+$primary-font: 'Lato', 'sans-serif' !default;
+
+/// Secondary font
+$secondary-font: 'Montserrat', 'sans-serif' !default;

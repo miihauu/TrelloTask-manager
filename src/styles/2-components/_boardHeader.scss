@@ -1,0 +1,42 @@
+.board {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 2rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    cursor: pointer;
+
+    span:hover {
+      background: rgb(212, 212, 212);
+      padding: 0.2rem;
+      border-radius: 5px;
+    }
+
+    form {
+      input {
+        background: rgb(255, 255, 255);
+        border: none;
+        color: black;
+        height: 100%;
+        padding: 0.2rem;
+        outline: none;
+      }
+      input::placeholder {
+        text-align: center;
+      }
+      input:focus {
+        border: 1px solid rgb(77, 77, 77);
+      }
+    }
+  }
+}

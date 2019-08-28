@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background: $primary-color;
+  
+    &__logo {
+      color: $text-color-s;
+      padding: 0 1rem;
+    }
+  }

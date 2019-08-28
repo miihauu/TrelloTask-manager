@@ -1,0 +1,768 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+.board-wrapper .board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  height: auto;
+  background: #eeeeee;
+  border-top: 2px solid #1976d2;
+  border-radius: 5px;
+  margin: 1rem 1rem;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3); }
+
+.board__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto; }
+
+.board__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 2rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  cursor: pointer; }
+  .board__title span:hover {
+    background: #d4d4d4;
+    padding: 0.2rem;
+    border-radius: 5px; }
+  .board__title form input {
+    background: white;
+    border: none;
+    color: black;
+    height: 100%;
+    padding: 0.2rem;
+    outline: none; }
+  .board__title form input::placeholder {
+    text-align: center; }
+  .board__title form input:focus {
+    border: 1px solid #4d4d4d; }
+
+.board__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 1.5rem;
+  padding: 0.5rem 0.7rem;
+  background: #eeeeee; }
+  .board__content .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 5px;
+    border-top: 2px solid #f9a825;
+    margin: 4px 0;
+    cursor: pointer;
+    position: relative;
+    /*       .card-attachments {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        .card-attachment {
+          margin: 0 5px;
+        }
+        span {
+          margin: 0 5px;
+        }
+        img {
+          width: 15px;
+          height: auto;
+        } 
+      } */ }
+    .board__content .card__priority-low {
+      border-top: 2px solid #7CB342; }
+    .board__content .card__priority-med {
+      border-top: 2px solid #f9a825; }
+    .board__content .card__priority-high {
+      border-top: 2px solid #d65858; }
+    .board__content .card__date {
+      display: flex;
+      justify-content: center;
+      width: 5rem;
+      height: auto;
+      background-color: #f9a825;
+      margin: .5rem;
+      padding: .15rem;
+      color: white;
+      font-size: .75rem;
+      border-radius: 5px; }
+    .board__content .card__date-low {
+      background-color: #7CB342; }
+    .board__content .card__date-med {
+      background-color: #f9a825; }
+    .board__content .card__date-high {
+      background-color: #d65858; }
+    .board__content .card__content {
+      display: flex;
+      justify-content: space-between; }
+    .board__content .card .text {
+      font-size: 0.9rem;
+      padding: 0.9rem 0.7rem;
+      width: 250px; }
+      .board__content .card .text p {
+        margin: 0;
+        overflow-wrap: break-word;
+        text-overflow: ellipsis;
+        line-height: 1.5; }
+      .board__content .card .text p:hover {
+        background: #d4d4d4;
+        padding: 0;
+        border-radius: 5px; }
+      .board__content .card .text textarea {
+        width: 16rem;
+        height: 5rem;
+        outline: none;
+        resize: none;
+        overflow: auto; }
+    .board__content .card .card-priority {
+      display: flex;
+      justify-content: center;
+      background: #f9a825;
+      color: white;
+      width: 40%;
+      font-weight: 500;
+      padding: 3px;
+      font-size: 12px;
+      border-radius: 3px;
+      margin-left: 0.5rem; }
+      .board__content .card .card-priority__low {
+        background: #7CB342; }
+      .board__content .card .card-priority__medium {
+        background: #f9a825; }
+      .board__content .card .card-priority__high {
+        background: #d65858; }
+    .board__content .card .card-actionBtn {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      z-index: 350; }
+
+.board__newcard {
+  background: #eeeeee;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center; }
+  .board__newcard .newcard__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0.1rem 0; }
+    .board__newcard .newcard__input input {
+      display: flex;
+      justify-content: center;
+      height: 2rem;
+      width: 90%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #eeeeee; }
+
+.action__menu {
+  display: flex;
+  align-items: center; }
+
+.action-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 3px; }
+  .action-btn button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .action-btn img {
+    width: 50%;
+    height: auto; }
+
+.action-btn:hover {
+  background: #e6e6e6; }
+
+.newboard-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  z-index: 200; }
+  .newboard-button button {
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #1976d2; }
+
+.dropdownmenu {
+  position: absolute;
+  top: 10px;
+  right: -150px;
+  z-index: 1000;
+  background: f8f9fa;
+  border-radius: 5px;
+  border: 2px solid #f1f1f1;
+  transition: opacity 0.1s, visibility 0s linear;
+  width: 150px;
+  height: auto;
+  opacity: 0;
+  visibility: hidden; }
+  .dropdownmenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    height: 100%; }
+    .dropdownmenu ul li {
+      width: 100%;
+      height: 100%; }
+  .dropdownmenu__btn {
+    color: #636363;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s linear; }
+  .dropdownmenu__btn:hover {
+    background-color: #e2e6ea;
+    color: #7e7e7e; }
+  .dropdownmenu .deleteBtn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa; }
+  .dropdownmenu .deleteBtn:hover {
+    background-color: #ee4051;
+    color: white; }
+
+.active {
+  opacity: 1;
+  visibility: visible; }
+
+.board-dropdownmenu-wrapper {
+  position: relative; }
+  .board-dropdownmenu-wrapper .dropdownmenu {
+    position: absolute;
+    top: -30px;
+    z-index: 100; }
+
+.confirm-modal, .card-settings-modal {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  width: 300px;
+  background: white;
+  color: black;
+  border-radius: 5px; }
+  .confirm-modal .modal-question, .card-settings-modal .modal-question {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0; }
+  .confirm-modal__buttons, .card-settings-modal__buttons {
+    display: flex;
+    justify-content: center; }
+    .confirm-modal__buttons button, .card-settings-modal__buttons button {
+      margin: 0 1rem;
+      height: 2rem;
+      width: 5rem;
+      cursor: pointer;
+      outline: none;
+      border: none; }
+    .confirm-modal__buttons .confirmation-button, .card-settings-modal__buttons .confirmation-button {
+      background: #aa2525;
+      color: white; }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.658); }
+
+.card-settings-modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f0f0f0;
+  height: 500px;
+  width: 600px; }
+  .card-settings-modal .card-header {
+    margin-top: 1rem;
+    font-weight: bold; }
+  .card-settings-modal .card-settings-priority {
+    margin-top: 1rem;
+    text-align: center; }
+    .card-settings-modal .card-settings-priority__buttons {
+      display: flex;
+      margin-top: 0.8rem; }
+    .card-settings-modal .card-settings-priority .priority-button {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: .5rem;
+      background-color: #cecece;
+      transition: background-color .1s ease-in;
+      outline: none;
+      border: none;
+      cursor: pointer; }
+    .card-settings-modal .card-settings-priority .priority-button__low {
+      border-radius: 5px 0 0 5px;
+      border-right: 1px solid #fff; }
+      .card-settings-modal .card-settings-priority .priority-button__low--active {
+        background-color: #7CB342; }
+    .card-settings-modal .card-settings-priority .priority-button__low:hover {
+      background-color: #64DD17; }
+    .card-settings-modal .card-settings-priority .priority-button__medium--active {
+      background-color: #F9A825; }
+    .card-settings-modal .card-settings-priority .priority-button__high--active {
+      background-color: #da4949; }
+    .card-settings-modal .card-settings-priority .priority-button__medium:hover {
+      background-color: #FFEA00; }
+    .card-settings-modal .card-settings-priority .priority-button__high {
+      border-radius: 0 5px 5px 0;
+      border-left: 1px solid #fff; }
+    .card-settings-modal .card-settings-priority .priority-button__high:hover {
+      background-color: #FF3D00; }
+  .card-settings-modal .card-settings__submit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%; }
+    .card-settings-modal .card-settings__submit button {
+      padding: .2rem;
+      width: 5rem;
+      background-color: #cecece;
+      outline: none;
+      border: 1px solid #cecece;
+      cursor: pointer;
+      transition: background-color .1s ease-in; }
+    .card-settings-modal .card-settings__submit button:hover {
+      background-color: #9b9b9b; }
+  .card-settings-modal .card-settings-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 90%;
+    height: 12rem;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 0 .7rem; }
+    .card-settings-modal .card-settings-description__header {
+      font-weight: bold;
+      margin: .2rem 0; }
+    .card-settings-modal .card-settings-description span {
+      overflow-wrap: break-word;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      padding: .1rem; }
+    .card-settings-modal .card-settings-description span:hover {
+      background: #d4d4d4;
+      border-radius: 5px;
+      cursor: pointer;
+      width: auto; }
+    .card-settings-modal .card-settings-description__content {
+      overflow: auto;
+      height: 9rem; }
+      .card-settings-modal .card-settings-description__content textarea {
+        width: 100%;
+        height: 85%;
+        padding: .5rem;
+        margin-top: .3rem;
+        outline: none;
+        -webkit-outline: none;
+        resize: none;
+        overflow: auto;
+        border-radius: 5px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+
+.date-picker-wrapper {
+  position: relative; }
+  .date-picker-wrapper .date-picker {
+    text-align: center;
+    width: 15rem;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cfcfcf;
+    padding: .2rem; }
+  .date-picker-wrapper .date-picker:hover {
+    border: 1px solid #1976d2;
+    cursor: pointer; }
+  .date-picker-wrapper .date-picker-calendar {
+    position: absolute;
+    top: -4.4rem;
+    left: 16rem; }
+
+.react-datepicker__triangle {
+  display: none; }
+
+.react-datepicker__close-icon {
+  right: 20px; }
+
+.app {
+  background: #fafafa;
+  height: 100vh;
+  font-family: "Montserrat", "sans-serif"; }
+
+.content {
+  display: flex;
+  overflow-y: auto;
+  height: calc(100% - 45px); }
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background: #1976d2; }
+  .header__logo {
+    color: white;
+    padding: 0 1rem; }

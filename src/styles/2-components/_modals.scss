@@ -1,0 +1,243 @@
+.confirm-modal, .card-settings-modal {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $secondary-font;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 150px;
+  width: 300px;
+
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+  border-radius: 5px;
+
+  .modal-question {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0 1rem;
+      height: 2rem;
+      width: 5rem;
+      cursor: pointer;
+      outline: none;
+      border: none;
+    }
+
+    .confirmation-button {
+      background: rgb(170, 37, 37);
+      color: white;
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.658);
+}
+
+
+
+.card-settings-modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  background: rgb(240, 240, 240);
+  height: 500px;
+  width: 600px;
+
+  .card-header {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .card-settings-priority {
+    margin-top: 1rem;
+    text-align: center;
+    &__buttons {
+      display: flex;
+      margin-top: 0.8rem;
+      
+    }
+
+    .priority-button {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: .5rem;
+      background-color: rgb(206, 206, 206);
+      transition: background-color .1s ease-in;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .priority-button__low {
+      border-radius: 5px 0 0 5px;
+      border-right: 1px solid #fff;
+      &--active {
+        background-color: #7CB342;
+      }
+    }
+
+    .priority-button__low:hover {
+      background-color: #64DD17;
+    }
+
+    .priority-button__medium {
+      &--active {
+        background-color: #F9A825;
+      }
+    }
+
+    .priority-button__high {
+      &--active {
+        background-color: rgb(218, 73, 73);
+      }
+    }
+
+
+    .priority-button__medium:hover {
+      background-color: #FFEA00;
+    }
+
+  
+
+  .priority-button__high {
+      border-radius: 0 5px 5px 0;
+      border-left: 1px solid #fff;
+    }
+  
+
+  .priority-button__high:hover {
+    background-color: #FF3D00;
+  }
+}
+  .card-settings__submit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+
+    button {
+      padding: .2rem;
+      width: 5rem;
+      background-color: rgb(206, 206, 206);
+      outline: none;
+      border: 1px solid rgb(206, 206, 206);
+      cursor: pointer;
+      transition: background-color .1s ease-in;
+    }
+
+    button:hover{
+      background-color: rgb(155, 155, 155);
+    }
+  } 
+
+  .card-settings-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 90%;
+    height: 12rem;
+    
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    padding: 0 .7rem;
+    
+    &__header {
+      font-weight: bold;
+      margin: .2rem 0;
+     }
+    
+    span {
+      overflow-wrap: break-word;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      padding: .1rem;
+    }
+
+    span:hover {
+      background: rgb(212, 212, 212);
+      border-radius: 5px;
+      cursor: pointer;
+      width: auto;
+    }
+
+    &__content {
+      overflow: auto; 
+      height: 9rem;
+      textarea {
+        width: 100%;
+        height: 85%;
+        padding: .5rem;
+        
+        margin-top: .3rem;
+        outline: none;
+        -webkit-outline: none;
+        resize: none;
+        overflow: auto;
+        border-radius: 5px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+}
+.date-picker-wrapper {
+  position: relative;
+  .date-picker {
+    text-align: center;
+    width: 15rem;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    padding: .2rem;
+  }
+
+  .date-picker:hover {
+    border: 1px solid $primary-color;
+    cursor: pointer;
+  }
+
+  .date-picker-calendar {
+    position: absolute;
+    top: -4.4rem;
+    left: 16rem;
+  }
+}
+  .react-datepicker__triangle {
+    display: none;
+  }
+
+  .react-datepicker__close-icon {
+    right: 20px;
+  }

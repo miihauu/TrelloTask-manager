@@ -7,6 +7,7 @@ Task manager is a project inspired by trello. This project is still in progress.
 
 
 **Main features:**
+
 *Version 1.0*
 
 - Creating and editing cards, dragging around cards and boards

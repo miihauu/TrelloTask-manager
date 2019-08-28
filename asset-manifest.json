@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/TrelloTask-manager/static/css/main.f506b25e.chunk.css",
+    "main.js": "/TrelloTask-manager/static/js/main.f47c0395.chunk.js",
+    "main.js.map": "/TrelloTask-manager/static/js/main.f47c0395.chunk.js.map",
+    "runtime~main.js": "/TrelloTask-manager/static/js/runtime~main.3385ca63.js",
+    "runtime~main.js.map": "/TrelloTask-manager/static/js/runtime~main.3385ca63.js.map",
+    "static/css/2.cc034990.chunk.css": "/TrelloTask-manager/static/css/2.cc034990.chunk.css",
+    "static/js/2.f44f6621.chunk.js": "/TrelloTask-manager/static/js/2.f44f6621.chunk.js",
+    "static/js/2.f44f6621.chunk.js.map": "/TrelloTask-manager/static/js/2.f44f6621.chunk.js.map",
+    "index.html": "/TrelloTask-manager/index.html",
+    "precache-manifest.a603d3d80ee920819828b61f8f8725e8.js": "/TrelloTask-manager/precache-manifest.a603d3d80ee920819828b61f8f8725e8.js",
+    "service-worker.js": "/TrelloTask-manager/service-worker.js",
+    "static/css/2.cc034990.chunk.css.map": "/TrelloTask-manager/static/css/2.cc034990.chunk.css.map",
+    "static/css/main.f506b25e.chunk.css.map": "/TrelloTask-manager/static/css/main.f506b25e.chunk.css.map",
+    "static/media/dots.svg": "/TrelloTask-manager/static/media/dots.5d197581.svg"
+  }
+}
